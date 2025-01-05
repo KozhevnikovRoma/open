@@ -1,0 +1,54 @@
+openapi: 3.0.0
+info:
+  title: AI Coordinator API
+  description: >
+    This API allows interaction with the AI Coordinator system. It supports operations for users, data processing, and log retrieval.
+  version: "1.0.0"
+paths:
+  /users/:
+    post:
+      summary: Create a new user
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                email:
+                  type: string
+      responses:
+        200:
+          description: User created successfully
+        400:
+          description: User already exists
+        500:
+          description: Server error
+  /upload/:
+    post:
+      summary: Upload and process a file
+      requestBody:
+        required: true
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        200:
+          description: Data processed successfully
+        500:
+          description: Server error
+  /logs/:
+    get:
+      summary: Retrieve API logs
+      responses:
+        200:
+          description: Logs retrieved successfully
+        500:
+          description: Server error

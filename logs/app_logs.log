@@ -1,0 +1,1017 @@
+2025-01-02 17:46:29 [INFO]: Загрузка памяти из файла...
+2025-01-02 17:46:29 [INFO]: Память успешно загружена из файла.
+2025-01-02 17:46:29 [INFO]: Загрузка памяти из файла...
+2025-01-02 17:46:29 [INFO]: Память успешно загружена из файла.
+2025-01-02 17:46:29 [INFO]: ConfigManager загружен и настроен.
+2025-01-02 17:48:06 [INFO]: Загрузка памяти из файла...
+2025-01-02 17:48:06 [INFO]: Память успешно загружена из файла.
+2025-01-02 17:48:06 [INFO]: Загрузка памяти из файла...
+2025-01-02 17:48:06 [INFO]: Память успешно загружена из файла.
+2025-01-02 17:48:06 [INFO]: ConfigManager загружен и настроен.
+2025-01-02 17:52:56 [INFO]: Загрузка памяти из файла...
+2025-01-02 17:52:56 [INFO]: Память успешно загружена из файла.
+2025-01-02 17:52:56 [INFO]: Загрузка памяти из файла...
+2025-01-02 17:52:56 [INFO]: Память успешно загружена из файла.
+2025-01-02 17:52:56 [INFO]: ConfigManager загружен и настроен.
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00018s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00020s] ('john@example.com', 1, 0)
+2025-01-02 17:52:57 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 17:52:57 [INFO]: [generated in 0.00016s] ('John Doe', 'john@example.com')
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00021s] (1,)
+2025-01-02 17:52:57 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00012s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00011s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] ('john@example.com', 1, 0)
+2025-01-02 17:52:57 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] ('John Doe', 'john@example.com')
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00018s] (1,)
+2025-01-02 17:52:57 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00015s] ('john@example.com', 1, 0)
+2025-01-02 17:52:57 [WARNING]: User with email 'john@example.com' already exists.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00012s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00011s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] ('john@example.com', 1, 0)
+2025-01-02 17:52:57 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] ('John Doe', 'john@example.com')
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] (1,)
+2025-01-02 17:52:57 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.id = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] (1, 1, 0)
+2025-01-02 17:52:57 [INFO]: User 'john@example.com' retrieved successfully.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00012s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00012s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.id = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00015s] (999, 1, 0)
+2025-01-02 17:52:57 [WARNING]: User with ID '999' not found.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00012s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00011s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] ('john@example.com', 1, 0)
+2025-01-02 17:52:57 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] ('John Doe', 'john@example.com')
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] (1,)
+2025-01-02 17:52:57 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] ('jane@example.com', 1, 0)
+2025-01-02 17:52:57 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 17:52:57 [INFO]: [generated in 0.00012s] ('Jane Doe', 'jane@example.com')
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] (2,)
+2025-01-02 17:52:57 [INFO]: User 'jane@example.com' successfully created.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00011s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.id = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00016s] (1, 1, 0)
+2025-01-02 17:52:57 [WARNING]: User with ID '1' not found.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: GET http://testserver/users/1 "HTTP/1.1 404 Not Found"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [INFO]: Загрузка памяти из файла...
+2025-01-02 17:52:57 [WARNING]: Файл памяти 'test_memory_storage.json' не найден. Создана новая память.
+2025-01-02 17:52:57 [INFO]: Сохранение данных по ключу 'test_key'...
+2025-01-02 17:52:57 [INFO]: Перед записью в файл, проверим доступность пути для: test_memory_storage.json.
+2025-01-02 17:52:57 [INFO]: Память успешно сохранена в файл 'test_memory_storage.json'.
+2025-01-02 17:52:57 [INFO]: Данные по ключу 'test_key' успешно сохранены.
+2025-01-02 17:52:57 [INFO]: Запрос данных по ключу 'test_key'...
+2025-01-02 17:52:57 [INFO]: Данные по ключу 'test_key' успешно извлечены.
+2025-01-02 17:52:57 [INFO]: Загрузка памяти из файла...
+2025-01-02 17:52:57 [WARNING]: Файл памяти 'vector_storage.bin' не найден. Создана новая память.
+2025-01-02 17:52:57 [DEBUG]: Добавление вектора с ключом 'vector1': [1, 2, 3]
+2025-01-02 17:52:57 [INFO]: Сохранение данных по ключу 'vector1'...
+2025-01-02 17:52:57 [INFO]: Перед записью в файл, проверим доступность пути для: vector_storage.bin.
+2025-01-02 17:52:57 [INFO]: Память успешно сохранена в файл 'vector_storage.bin'.
+2025-01-02 17:52:57 [INFO]: Данные по ключу 'vector1' успешно сохранены.
+2025-01-02 17:52:57 [INFO]: Вектор успешно добавлен с ключом 'vector1'.
+2025-01-02 17:52:57 [DEBUG]: Добавление вектора с ключом 'vector2': [1, 2, 3]
+2025-01-02 17:52:57 [INFO]: Сохранение данных по ключу 'vector2'...
+2025-01-02 17:52:57 [INFO]: Перед записью в файл, проверим доступность пути для: vector_storage.bin.
+2025-01-02 17:52:57 [INFO]: Память успешно сохранена в файл 'vector_storage.bin'.
+2025-01-02 17:52:57 [INFO]: Данные по ключу 'vector2' успешно сохранены.
+2025-01-02 17:52:57 [INFO]: Вектор успешно добавлен с ключом 'vector2'.
+2025-01-02 17:52:57 [DEBUG]: Извлечение векторов для ключей 'vector1' и 'vector2'
+2025-01-02 17:52:57 [INFO]: Запрос данных по ключу 'vector1'...
+2025-01-02 17:52:57 [INFO]: Данные по ключу 'vector1' успешно извлечены.
+2025-01-02 17:52:57 [INFO]: Запрос данных по ключу 'vector2'...
+2025-01-02 17:52:57 [INFO]: Данные по ключу 'vector2' успешно извлечены.
+2025-01-02 17:52:57 [DEBUG]: Скалярное произведение: 14, нормы: 3.7416573867739413, 3.7416573867739413
+2025-01-02 17:52:57 [DEBUG]: Вычисленная схожесть: 1.0
+2025-01-02 17:52:57 [INFO]: Загрузка памяти из файла...
+2025-01-02 17:52:57 [INFO]: Память успешно загружена из файла.
+2025-01-02 17:52:57 [INFO]: Сохранение данных по ключу 'test_key'...
+2025-01-02 17:52:57 [INFO]: Данные по ключу 'test_key' успешно сохранены.
+2025-01-02 17:52:57 [INFO]: Запрос данных по ключу 'test_key'...
+2025-01-02 17:52:57 [INFO]: Данные по ключу 'test_key' успешно извлечены.
+2025-01-02 17:52:57 [INFO]: Загрузка памяти из файла...
+2025-01-02 17:52:57 [INFO]: Память успешно загружена из файла.
+2025-01-02 17:52:57 [INFO]: Сохранение данных по ключу 'test_key'...
+2025-01-02 17:52:57 [INFO]: Данные по ключу 'test_key' успешно сохранены.
+2025-01-02 17:52:57 [INFO]: Запрос данных по ключу 'test_key'...
+2025-01-02 17:52:57 [INFO]: Данные по ключу 'test_key' успешно извлечены.
+2025-01-02 17:52:57 [INFO]: Удаление данных по ключу 'test_key'...
+2025-01-02 17:52:57 [INFO]: Данные по ключу 'test_key' успешно удалены.
+2025-01-02 17:52:57 [INFO]: Запрос данных по ключу 'test_key'...
+2025-01-02 17:52:57 [WARNING]: Ключ 'test_key' не найден в памяти.
+2025-01-02 17:52:57 [INFO]: Загрузка памяти из файла...
+2025-01-02 17:52:57 [INFO]: Память успешно загружена из файла.
+2025-01-02 17:52:57 [INFO]: Запрос данных по ключу 'nonexistent_key'...
+2025-01-02 17:52:57 [WARNING]: Ключ 'nonexistent_key' не найден в памяти.
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: Root endpoint accessed
+2025-01-02 17:52:57 [INFO]: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00012s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00015s] ('john@example.com', 1, 0)
+2025-01-02 17:52:57 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] ('John Doe', 'john@example.com')
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] (1,)
+2025-01-02 17:52:57 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00011s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00015s] ('john@example.com', 1, 0)
+2025-01-02 17:52:57 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 17:52:57 [INFO]: [generated in 0.00012s] ('John Doe', 'john@example.com')
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] (1,)
+2025-01-02 17:52:57 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] ('john@example.com', 1, 0)
+2025-01-02 17:52:57 [WARNING]: User with email 'john@example.com' already exists.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00011s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] ('john@example.com', 1, 0)
+2025-01-02 17:52:57 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] ('John Doe', 'john@example.com')
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] (1,)
+2025-01-02 17:52:57 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.id = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00015s] (1, 1, 0)
+2025-01-02 17:52:57 [INFO]: User 'john@example.com' retrieved successfully.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00011s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.id = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] (999, 1, 0)
+2025-01-02 17:52:57 [WARNING]: User with ID '999' not found.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00011s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] ('john@example.com', 1, 0)
+2025-01-02 17:52:57 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 17:52:57 [INFO]: [generated in 0.00013s] ('John', 'john@example.com')
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] (1,)
+2025-01-02 17:52:57 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00012s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] ('john@example.com', 1, 0)
+2025-01-02 17:52:57 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] ('', 'john@example.com')
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 17:52:57 [INFO]: [generated in 0.00014s] (1,)
+2025-01-02 17:52:57 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 17:52:57 [INFO]: ROLLBACK
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: BEGIN (implicit)
+2025-01-02 17:52:57 [INFO]: DELETE FROM users
+2025-01-02 17:52:57 [INFO]: [generated in 0.00012s] ()
+2025-01-02 17:52:57 [INFO]: COMMIT
+2025-01-02 17:52:57 [INFO]: All users have been successfully cleared.
+2025-01-02 17:52:57 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 17:52:57 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 17:52:57 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2025-01-02 18:05:19 [INFO]: Загрузка памяти из файла...
+2025-01-02 18:05:19 [INFO]: Память успешно загружена из файла.
+2025-01-02 18:05:19 [INFO]: Загрузка памяти из файла...
+2025-01-02 18:05:19 [INFO]: Память успешно загружена из файла.
+2025-01-02 18:05:19 [INFO]: ConfigManager загружен и настроен.
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00021s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00019s] ('john@example.com', 1, 0)
+2025-01-02 18:05:19 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 18:05:19 [INFO]: [generated in 0.00016s] ('John Doe', 'john@example.com')
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00021s] (1,)
+2025-01-02 18:05:19 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00012s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00012s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00020s] ('john@example.com', 1, 0)
+2025-01-02 18:05:19 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 18:05:19 [INFO]: [generated in 0.00014s] ('John Doe', 'john@example.com')
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00013s] (1,)
+2025-01-02 18:05:19 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00014s] ('john@example.com', 1, 0)
+2025-01-02 18:05:19 [WARNING]: User with email 'john@example.com' already exists.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00011s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00012s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00014s] ('john@example.com', 1, 0)
+2025-01-02 18:05:19 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 18:05:19 [INFO]: [generated in 0.00013s] ('John Doe', 'john@example.com')
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00013s] (1,)
+2025-01-02 18:05:19 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.id = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00014s] (1, 1, 0)
+2025-01-02 18:05:19 [INFO]: User 'john@example.com' retrieved successfully.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00011s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00011s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.id = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00015s] (999, 1, 0)
+2025-01-02 18:05:19 [WARNING]: User with ID '999' not found.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00013s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00011s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00015s] ('john@example.com', 1, 0)
+2025-01-02 18:05:19 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 18:05:19 [INFO]: [generated in 0.00012s] ('John Doe', 'john@example.com')
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00013s] (1,)
+2025-01-02 18:05:19 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00014s] ('jane@example.com', 1, 0)
+2025-01-02 18:05:19 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 18:05:19 [INFO]: [generated in 0.00012s] ('Jane Doe', 'jane@example.com')
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00014s] (2,)
+2025-01-02 18:05:19 [INFO]: User 'jane@example.com' successfully created.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00011s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.id = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00014s] (1, 1, 0)
+2025-01-02 18:05:19 [WARNING]: User with ID '1' not found.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: GET http://testserver/users/1 "HTTP/1.1 404 Not Found"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00011s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [INFO]: Загрузка памяти из файла...
+2025-01-02 18:05:19 [WARNING]: Файл памяти 'test_memory_storage.json' не найден. Создана новая память.
+2025-01-02 18:05:19 [INFO]: Сохранение данных по ключу 'test_key'...
+2025-01-02 18:05:19 [INFO]: Перед записью в файл, проверим доступность пути для: test_memory_storage.json.
+2025-01-02 18:05:19 [INFO]: Память успешно сохранена в файл 'test_memory_storage.json'.
+2025-01-02 18:05:19 [INFO]: Данные по ключу 'test_key' успешно сохранены.
+2025-01-02 18:05:19 [INFO]: Запрос данных по ключу 'test_key'...
+2025-01-02 18:05:19 [INFO]: Данные по ключу 'test_key' успешно извлечены.
+2025-01-02 18:05:19 [INFO]: Загрузка памяти из файла...
+2025-01-02 18:05:19 [INFO]: Память успешно загружена из файла.
+2025-01-02 18:05:19 [DEBUG]: Добавление вектора с ключом 'vector1': [1, 2, 3]
+2025-01-02 18:05:19 [INFO]: Сохранение данных по ключу 'vector1'...
+2025-01-02 18:05:19 [INFO]: Перед записью в файл, проверим доступность пути для: vector_storage.bin.
+2025-01-02 18:05:19 [INFO]: Память успешно сохранена в файл 'vector_storage.bin'.
+2025-01-02 18:05:19 [INFO]: Данные по ключу 'vector1' успешно сохранены.
+2025-01-02 18:05:19 [INFO]: Вектор успешно добавлен с ключом 'vector1'.
+2025-01-02 18:05:19 [DEBUG]: Добавление вектора с ключом 'vector2': [1, 2, 3]
+2025-01-02 18:05:19 [INFO]: Сохранение данных по ключу 'vector2'...
+2025-01-02 18:05:19 [INFO]: Перед записью в файл, проверим доступность пути для: vector_storage.bin.
+2025-01-02 18:05:19 [INFO]: Память успешно сохранена в файл 'vector_storage.bin'.
+2025-01-02 18:05:19 [INFO]: Данные по ключу 'vector2' успешно сохранены.
+2025-01-02 18:05:19 [INFO]: Вектор успешно добавлен с ключом 'vector2'.
+2025-01-02 18:05:19 [DEBUG]: Извлечение векторов для ключей 'vector1' и 'vector2'
+2025-01-02 18:05:19 [INFO]: Запрос данных по ключу 'vector1'...
+2025-01-02 18:05:19 [INFO]: Данные по ключу 'vector1' успешно извлечены.
+2025-01-02 18:05:19 [INFO]: Запрос данных по ключу 'vector2'...
+2025-01-02 18:05:19 [INFO]: Данные по ключу 'vector2' успешно извлечены.
+2025-01-02 18:05:19 [DEBUG]: Скалярное произведение: 14, нормы: 3.7416573867739413, 3.7416573867739413
+2025-01-02 18:05:19 [DEBUG]: Вычисленная схожесть: 1.0
+2025-01-02 18:05:19 [INFO]: Загрузка памяти из файла...
+2025-01-02 18:05:19 [INFO]: Память успешно загружена из файла.
+2025-01-02 18:05:19 [INFO]: Сохранение данных по ключу 'test_key'...
+2025-01-02 18:05:19 [INFO]: Данные по ключу 'test_key' успешно сохранены.
+2025-01-02 18:05:19 [INFO]: Запрос данных по ключу 'test_key'...
+2025-01-02 18:05:19 [INFO]: Данные по ключу 'test_key' успешно извлечены.
+2025-01-02 18:05:19 [INFO]: Загрузка памяти из файла...
+2025-01-02 18:05:19 [INFO]: Память успешно загружена из файла.
+2025-01-02 18:05:19 [INFO]: Сохранение данных по ключу 'test_key'...
+2025-01-02 18:05:19 [INFO]: Данные по ключу 'test_key' успешно сохранены.
+2025-01-02 18:05:19 [INFO]: Запрос данных по ключу 'test_key'...
+2025-01-02 18:05:19 [INFO]: Данные по ключу 'test_key' успешно извлечены.
+2025-01-02 18:05:19 [INFO]: Удаление данных по ключу 'test_key'...
+2025-01-02 18:05:19 [INFO]: Данные по ключу 'test_key' успешно удалены.
+2025-01-02 18:05:19 [INFO]: Запрос данных по ключу 'test_key'...
+2025-01-02 18:05:19 [WARNING]: Ключ 'test_key' не найден в памяти.
+2025-01-02 18:05:19 [INFO]: Загрузка памяти из файла...
+2025-01-02 18:05:19 [INFO]: Память успешно загружена из файла.
+2025-01-02 18:05:19 [INFO]: Запрос данных по ключу 'nonexistent_key'...
+2025-01-02 18:05:19 [WARNING]: Ключ 'nonexistent_key' не найден в памяти.
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: Root endpoint accessed
+2025-01-02 18:05:19 [INFO]: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00012s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00015s] ('john@example.com', 1, 0)
+2025-01-02 18:05:19 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 18:05:19 [INFO]: [generated in 0.00013s] ('John Doe', 'john@example.com')
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00013s] (1,)
+2025-01-02 18:05:19 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00013s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00014s] ('john@example.com', 1, 0)
+2025-01-02 18:05:19 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 18:05:19 [INFO]: [generated in 0.00013s] ('John Doe', 'john@example.com')
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00012s] (1,)
+2025-01-02 18:05:19 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00013s] ('john@example.com', 1, 0)
+2025-01-02 18:05:19 [WARNING]: User with email 'john@example.com' already exists.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 400 Bad Request"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: DELETE FROM users
+2025-01-02 18:05:19 [INFO]: [generated in 0.00011s] ()
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:19 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00016s] ('john@example.com', 1, 0)
+2025-01-02 18:05:19 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 18:05:19 [INFO]: [generated in 0.00013s] ('John Doe', 'john@example.com')
+2025-01-02 18:05:19 [INFO]: COMMIT
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00014s] (1,)
+2025-01-02 18:05:19 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 18:05:19 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:19 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:19 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.id = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:19 [INFO]: [generated in 0.00014s] (1, 1, 0)
+2025-01-02 18:05:19 [INFO]: User 'john@example.com' retrieved successfully.
+2025-01-02 18:05:19 [INFO]: ROLLBACK
+2025-01-02 18:05:19 [INFO]: HTTP Request: GET http://testserver/users/1 "HTTP/1.1 200 OK"
+2025-01-02 18:05:20 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:20 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:20 [INFO]: DELETE FROM users
+2025-01-02 18:05:20 [INFO]: [generated in 0.00012s] ()
+2025-01-02 18:05:20 [INFO]: COMMIT
+2025-01-02 18:05:20 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:20 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:20 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:20 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:20 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.id = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:20 [INFO]: [generated in 0.00014s] (999, 1, 0)
+2025-01-02 18:05:20 [WARNING]: User with ID '999' not found.
+2025-01-02 18:05:20 [INFO]: ROLLBACK
+2025-01-02 18:05:20 [INFO]: HTTP Request: GET http://testserver/users/999 "HTTP/1.1 404 Not Found"
+2025-01-02 18:05:20 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:20 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:20 [INFO]: DELETE FROM users
+2025-01-02 18:05:20 [INFO]: [generated in 0.00012s] ()
+2025-01-02 18:05:20 [INFO]: COMMIT
+2025-01-02 18:05:20 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:20 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:20 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:20 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:20 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:20 [INFO]: [generated in 0.00015s] ('john@example.com', 1, 0)
+2025-01-02 18:05:20 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 18:05:20 [INFO]: [generated in 0.00013s] ('John', 'john@example.com')
+2025-01-02 18:05:20 [INFO]: COMMIT
+2025-01-02 18:05:20 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:20 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 18:05:20 [INFO]: [generated in 0.00013s] (1,)
+2025-01-02 18:05:20 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 18:05:20 [INFO]: ROLLBACK
+2025-01-02 18:05:20 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 18:05:20 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:20 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:20 [INFO]: DELETE FROM users
+2025-01-02 18:05:20 [INFO]: [generated in 0.00012s] ()
+2025-01-02 18:05:20 [INFO]: COMMIT
+2025-01-02 18:05:20 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:20 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:20 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:20 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:20 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 18:05:20 [INFO]: [generated in 0.00015s] ('john@example.com', 1, 0)
+2025-01-02 18:05:20 [INFO]: INSERT INTO users (name, email) VALUES (?, ?)
+2025-01-02 18:05:20 [INFO]: [generated in 0.00012s] ('', 'john@example.com')
+2025-01-02 18:05:20 [INFO]: COMMIT
+2025-01-02 18:05:20 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:20 [INFO]: SELECT users.id, users.name, users.email 
+FROM users 
+WHERE users.id = ?
+2025-01-02 18:05:20 [INFO]: [generated in 0.00015s] (1,)
+2025-01-02 18:05:20 [INFO]: User 'john@example.com' successfully created.
+2025-01-02 18:05:20 [INFO]: ROLLBACK
+2025-01-02 18:05:20 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 200 OK"
+2025-01-02 18:05:20 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:20 [INFO]: BEGIN (implicit)
+2025-01-02 18:05:20 [INFO]: DELETE FROM users
+2025-01-02 18:05:20 [INFO]: [generated in 0.00012s] ()
+2025-01-02 18:05:20 [INFO]: COMMIT
+2025-01-02 18:05:20 [INFO]: All users have been successfully cleared.
+2025-01-02 18:05:20 [INFO]: HTTP Request: DELETE http://testserver/users/clear "HTTP/1.1 204 No Content"
+2025-01-02 18:05:20 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 18:05:20 [INFO]: HTTP Request: POST http://testserver/users/ "HTTP/1.1 422 Unprocessable Entity"
+2025-01-02 22:38:07 [INFO]: Загрузка памяти из файла...
+2025-01-02 22:38:07 [INFO]: Память успешно загружена из файла.
+2025-01-02 22:38:07 [INFO]: Загрузка памяти из файла...
+2025-01-02 22:38:07 [INFO]: Память успешно загружена из файла.
+2025-01-02 22:38:07 [INFO]: ConfigManager загружен и настроен.
+2025-01-02 22:57:22 [INFO]: Загрузка памяти из файла...
+2025-01-02 22:57:22 [INFO]: Память успешно загружена из файла.
+2025-01-02 22:57:22 [INFO]: Загрузка памяти из файла...
+2025-01-02 22:57:22 [INFO]: Память успешно загружена из файла.
+2025-01-02 22:57:22 [INFO]: ConfigManager загружен и настроен.
+2025-01-02 22:57:22 [DEBUG]: Using proactor: IocpProactor
+2025-01-02 22:57:22 [INFO]: Root endpoint accessed
+2025-01-02 22:57:22 [INFO]: HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2025-01-02 23:03:37 [INFO]: Загрузка памяти из файла...
+2025-01-02 23:03:37 [INFO]: Память успешно загружена из файла.
+2025-01-02 23:03:37 [INFO]: Загрузка памяти из файла...
+2025-01-02 23:03:37 [INFO]: Память успешно загружена из файла.
+2025-01-02 23:03:37 [INFO]: ConfigManager загружен и настроен.
+2025-01-02 23:06:11 [INFO]: BEGIN (implicit)
+2025-01-02 23:06:11 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 23:06:11 [INFO]: [generated in 0.00051s] ('john@example.com', 1, 0)
+2025-01-02 23:06:11 [INFO]: ROLLBACK
+2025-01-02 23:06:11 [ERROR]: Database error during user creation: (sqlite3.OperationalError) no such column: users.created_at
+[SQL: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('john@example.com', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-02 23:08:30 [INFO]: BEGIN (implicit)
+2025-01-02 23:08:30 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 23:08:30 [INFO]: [generated in 0.00041s] ('john@example.com', 1, 0)
+2025-01-02 23:08:30 [INFO]: ROLLBACK
+2025-01-02 23:08:30 [ERROR]: Database error during user creation: (sqlite3.OperationalError) no such column: users.created_at
+[SQL: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('john@example.com', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-02 23:22:36 [INFO]: Загрузка памяти из файла...
+2025-01-02 23:22:36 [INFO]: Память успешно загружена из файла.
+2025-01-02 23:22:36 [INFO]: Загрузка памяти из файла...
+2025-01-02 23:22:36 [INFO]: Память успешно загружена из файла.
+2025-01-02 23:22:36 [INFO]: ConfigManager загружен и настроен.
+2025-01-02 23:23:10 [INFO]: BEGIN (implicit)
+2025-01-02 23:23:10 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 23:23:10 [INFO]: [generated in 0.00047s] ('john@example.com', 1, 0)
+2025-01-02 23:23:10 [INFO]: ROLLBACK
+2025-01-02 23:23:10 [ERROR]: Database error during user creation: (sqlite3.OperationalError) no such column: users.created_at
+[SQL: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('john@example.com', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-02 23:23:42 [INFO]: BEGIN (implicit)
+2025-01-02 23:23:42 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 23:23:42 [INFO]: [generated in 0.00061s] ('john@example.com', 1, 0)
+2025-01-02 23:23:42 [INFO]: ROLLBACK
+2025-01-02 23:23:42 [ERROR]: Database error during user creation: (sqlite3.OperationalError) no such column: users.created_at
+[SQL: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('john@example.com', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-02 23:23:46 [INFO]: BEGIN (implicit)
+2025-01-02 23:23:46 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 23:23:46 [INFO]: [generated in 0.00066s] ('john@example.com', 1, 0)
+2025-01-02 23:23:46 [INFO]: ROLLBACK
+2025-01-02 23:23:46 [ERROR]: Database error during user creation: (sqlite3.OperationalError) no such column: users.created_at
+[SQL: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('john@example.com', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-02 23:24:05 [INFO]: BEGIN (implicit)
+2025-01-02 23:24:05 [INFO]: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?
+2025-01-02 23:24:05 [INFO]: [generated in 0.00022s] ('john@example.com', 1, 0)
+2025-01-02 23:24:05 [INFO]: ROLLBACK
+2025-01-02 23:24:05 [ERROR]: Database error during user creation: (sqlite3.OperationalError) no such column: users.created_at
+[SQL: SELECT users.id AS users_id, users.name AS users_name, users.email AS users_email, users.created_at AS users_created_at, users.updated_at AS users_updated_at 
+FROM users 
+WHERE users.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('john@example.com', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-01-03 21:51:21 [INFO]: Загрузка памяти из файла...
+2025-01-03 21:51:21 [INFO]: Память успешно загружена из файла.
+2025-01-03 21:51:21 [INFO]: Загрузка памяти из файла...
+2025-01-03 21:51:21 [INFO]: Память успешно загружена из файла.
+2025-01-03 21:51:21 [INFO]: ConfigManager загружен и настроен.
+2025-01-03 21:51:21 [INFO]: OpenAI конфигурация загружена.
+2025-01-03 21:52:05 [INFO]: Загрузка памяти из файла...
+2025-01-03 21:52:05 [INFO]: Память успешно загружена из файла.
+2025-01-03 21:52:05 [INFO]: Загрузка памяти из файла...
+2025-01-03 21:52:05 [INFO]: Память успешно загружена из файла.
+2025-01-03 21:52:05 [INFO]: ConfigManager загружен и настроен.
+2025-01-03 21:52:05 [INFO]: OpenAI конфигурация загружена.
+2025-01-03 22:07:10 [INFO]: Загрузка памяти из файла...
+2025-01-03 22:07:10 [INFO]: Память успешно загружена из файла.
+2025-01-03 22:07:10 [INFO]: Загрузка памяти из файла...
+2025-01-03 22:07:10 [INFO]: Память успешно загружена из файла.
+2025-01-03 22:07:10 [INFO]: ConfigManager загружен и настроен.
+2025-01-03 22:07:10 [INFO]: OpenAI конфигурация загружена.
+2025-01-03 22:34:39 [INFO]: Загрузка памяти из файла...
+2025-01-03 22:34:39 [INFO]: Память успешно загружена из файла.
+2025-01-03 22:34:39 [INFO]: Загрузка памяти из файла...
+2025-01-03 22:34:39 [INFO]: Память успешно загружена из файла.
+2025-01-03 22:34:39 [INFO]: ConfigManager загружен и настроен.
+2025-01-03 22:34:39 [INFO]: OpenAI конфигурация загружена.
+2025-01-03 22:36:25 [INFO]: Загрузка памяти из файла...
+2025-01-03 22:36:25 [INFO]: Память успешно загружена из файла.
+2025-01-03 22:36:25 [INFO]: Загрузка памяти из файла...
+2025-01-03 22:36:25 [INFO]: Память успешно загружена из файла.
+2025-01-03 22:36:25 [INFO]: ConfigManager загружен и настроен.
+2025-01-03 22:36:25 [INFO]: OpenAI конфигурация загружена.

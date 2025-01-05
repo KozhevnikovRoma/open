@@ -1,0 +1,13 @@
+
+import unittest
+from server.server import app
+from api.handlers.user_handler import UserHandler
+
+class IntegrationTests(unittest.TestCase):
+    def test_full_flow(self):
+        with app.test_client() as client:
+            response = client.get('/api/user/1')
+            self.assertEqual(response.status_code, 200)
+
+if __name__ == '__main__':
+    unittest.main()

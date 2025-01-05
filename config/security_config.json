@@ -1,0 +1,7 @@
+{
+    "encryption_key": "replace_with_real_key",
+    "roles": {
+        "admin": ["read", "write", "delete"],
+        "user": ["read", "write"]
+    }
+}
