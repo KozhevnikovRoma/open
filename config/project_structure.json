@@ -1,0 +1,5 @@
+{
+    "project_name": "AI_Coordinator",
+    "version": "1.0",
+    "modules": ["server", "api", "memory", "database", "automation", "security", "logs", "config", "tests", "tools"]
+}

@@ -1,0 +1,54 @@
+[33mcommit f30c5802d3c9d11c851c5f1a9a77267571144a9a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: KozhevnikovRoma <rnkozhevnikov@gmail.com>
+Date:   Sat Feb 8 15:52:55 2025 +0300
+
+    Автоматическое обновление кода
+
+[33mcommit de2781c1bd918c53a6cc5ea59c8ede7bc7538ef5[m
+Merge: 8212dad 5b4184a
+Author: KozhevnikovRoma <rnkozhevnikov@gmail.com>
+Date:   Sat Feb 8 15:35:48 2025 +0300
+
+    Resolve merge conflict in database_manager.py
+
+[33mcommit 5b4184ad9734977b8f398e0ae5177787bf2a0bd2[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: KozhevnikovRoma <rnkozhevnikov@gmail.com>
+Date:   Sat Feb 8 15:02:21 2025 +0300
+
+    Update database_manager.py
+
+[33mcommit 8212dad6882a726fa035e1f3efa0b8a31158bd6c[m
+Author: KozhevnikovRoma <rnkozhevnikov@gmail.com>
+Date:   Sat Feb 8 14:54:21 2025 +0300
+
+    Автоматическое обновление кода
+
+[33mcommit dfb83ea7cbbf4cd5a661661027932a2ff7732e7b[m
+Author: KozhevnikovRoma <rnkozhevnikov@gmail.com>
+Date:   Sat Feb 8 14:41:16 2025 +0300
+
+    Remove .env file from repository
+
+[33mcommit 9c0e9776fcbea95656e0d13521d726cb681fd914[m
+Author: KozhevnikovRoma <rnkozhevnikov@gmail.com>
+Date:   Sat Feb 8 14:37:30 2025 +0300
+
+    Автоматическое обновление кода
+
+[33mcommit 7d87e0ca9cc03ec82cb7d1a73c14408dc1e194e8[m
+Author: KozhevnikovRoma <rnkozhevnikov@gmail.com>
+Date:   Sat Feb 8 13:55:09 2025 +0300
+
+    Автоматическое обновление кода
+
+[33mcommit 0b922785a3ddd80c1d0e280afde68e273620e43a[m
+Author: KozhevnikovRoma <rnkozhevnikov@gmail.com>
+Date:   Sat Feb 8 12:54:47 2025 +0300
+
+    Добавлен .gitignore для игнорирования секретных файлов
+
+[33mcommit b9bcc2abcdc39fdd1033682e3fd17afbe95083fa[m
+Author: KozhevnikovRoma <rnkozhevnikov@gmail.com>
+Date:   Sat Feb 8 12:48:46 2025 +0300
+
+    Очистка истории, удаление секретных данных

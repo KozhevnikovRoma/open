@@ -1,0 +1,6 @@
+{
+    "logging": true,
+    "debug_mode": false,
+    "default_language": "en",
+    "backup_interval_hours": 24
+}
