@@ -73,6 +73,63 @@ class DatabaseManager:
         """Создаёт сессию для работы с БД."""
         return self.Session()
 
+    # Методы работы с данными
+    def add_data(self, data):
+        """Добавляет данные в таблицу."""
+        session = self.get_session()
+        try:
+            session.add(data)
+            session.commit()
+            logging.info(f"Данные добавлены: {data}")
+        except Exception as e:
+            session.rollback()
+            logging.error(f"Ошибка при добавлении данных: {e}")
+        finally:
+            session.close()
+
+    def get_data(self, model, filters=None):
+        """Получает данные из таблицы."""
+        session = self.get_session()
+        try:
+            query = session.query(model)
+            if filters:
+                query = query.filter_by(**filters)
+            result = query.all()
+            logging.info(f"Данные получены: {result}")
+            return result
+        except Exception as e:
+            logging.error(f"Ошибка при получении данных: {e}")
+        finally:
+            session.close()
+
+    def update_data(self, model, filters, update_values):
+        """Обновляет данные в таблице."""
+        session = self.get_session()
+        try:
+            query = session.query(model).filter_by(**filters)
+            updated_count = query.update(update_values)
+            session.commit()
+            logging.info(f"Обновлено записей: {updated_count}")
+        except Exception as e:
+            session.rollback()
+            logging.error(f"Ошибка при обновлении данных: {e}")
+        finally:
+            session.close()
+
+    def delete_data(self, model, filters):
+        """Удаляет данные из таблицы."""
+        session = self.get_session()
+        try:
+            query = session.query(model).filter_by(**filters)
+            deleted_count = query.delete()
+            session.commit()
+            logging.info(f"Удалено записей: {deleted_count}")
+        except Exception as e:
+            session.rollback()
+            logging.error(f"Ошибка при удалении данных: {e}")
+        finally:
+            session.close()
+
 if __name__ == "__main__":
     db_manager = DatabaseManager()
     db_manager.create_tables()
